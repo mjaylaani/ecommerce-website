@@ -28,7 +28,7 @@
                 </ul>
             </nav>
             <img src="/images/cart.png" width="30px" height="30px">
-            <img src="/images/menu.png" class="menu-icon" onclick="menutoggle">
+            <img src="/images/menu.png" class="menu-icon" onclick="menutoggle()">
         </div>
         <div class="row">
             <div class="col-2">
@@ -365,10 +365,11 @@
     <script>
         var menuitems =document.getElementById("menuitems");
 
-        menuitems.style.maxHeight ="0px";
+        menuitems.style.maxHeight = "0px";
 
         function menutoggle(){
-            if( menuitems.style.maxHeight =="0px"){
+            console.log("helleow");
+            if( menuitems.style.maxHeight == "0px"){
 
                 menuitems.style.maxHeight = "200px";
             }

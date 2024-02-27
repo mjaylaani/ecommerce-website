@@ -263,6 +263,8 @@ ul{
         left: 0;
         background: #333;
         width: 100%;
+        overflow:hidden;
+        transition: max-height 0.5s;
 
     }
     nav ul li{
@@ -278,4 +280,32 @@ ul{
         display: block;
         cursor: pointer;
     }
+}
+
+
+
+/*all product page*/
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+select{
+    border: 1px solid #ff523b;
+    padding: 5px;
+}
+select:focus{
+    outline: none;
+}
+
+/* media less than 600 size*/
+@media only screen and (max-width:600px){
+
+    .row{
+        text-align: center;
+
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+
 }
